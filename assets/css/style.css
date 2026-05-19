@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  color: #1b2845;
+}
+ 
+h1 {
+  margin-bottom: 24px;
+}
+ 
+.aggiunta {
+  margin-bottom: 20px;
+}
+ 
+.aggiunta input {
+  width: 78%;
+  padding: 10px;
+  font-size: 16px;
+  font-family: inherit;
+}
+ 
+.aggiunta button {
+  width: 20%;
+  padding: 10px;
+  cursor: pointer;
+  font-family: inherit;
+}
+ 
+ul {
+  list-style: none;
+  padding: 0;
+}
+ 
+li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+}
+ 
+li:hover {
+  outline: 2px solid #f5c518;
+  cursor: default;
+}
+
+/* Aggiungi qui le tue regole CSS per:
+   - .priorita-alta / .priorita-media / .priorita-bassa
+   - .badge (l'etichetta della priorità dentro il task)
+   - .data (la data di creazione)
+   - .evidenziato (sfondo giallo, bordo)
+*/
+
+
+.priorita-alta {
+  background-color: #fde2e2;
+}
+
+.priorita-media {
+  background-color: #fff8e1;
+}
+
+.priorita-bassa {
+  background-color: #e2f5e2;
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #1b2845;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-left: 6px;
+}
+
+.data {
+  font-size: 12px;
+  color: #888;
+  margin-left: 10px;
+  white-space: nowrap;
+  float: right;
+  line-height: 24px;
+
+}
+
+.evidenziato {
+  background-color: #fffbe6 !important;
+  outline: 2px solid #f6c948;
+}
+
+.btn-elimina {
+  float: right;
+  padding: 4px 10px;
+  font-size: 13px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.btn-elimina:hover {
+  background: #f44336;
+  color: #fff;
+  border-color: #f44336;
+}
