@@ -38,8 +38,13 @@ function aggiungiTask(testo, priorita = "media") {
   const li = document.createElement("li");
   li.classList.add("priorita-" + priorita);
 
-  
-  const btnElimina = document.createElement("button");
+ 
+  const data = document.createElement("span");
+  data.classList.add("data");
+  const ora = new Date();
+  data.textContent = ora.toLocaleString("it-IT");
+
+   const btnElimina = document.createElement("button");
   btnElimina.classList.add("btn-elimina");
   btnElimina.textContent = "Elimina";
   btnElimina.onclick = () => {
@@ -47,17 +52,10 @@ function aggiungiTask(testo, priorita = "media") {
     aggiornaContatore();
   };
 
- 
-  const data = document.createElement("span");
-  data.classList.add("data");
-  const ora = new Date();
-  data.textContent = ora.toLocaleString("it-IT");
 
-  // Testo task
   const span = document.createElement("span");
   span.textContent = testo;
 
-  // Badge
   const badge = document.createElement("span");
   badge.classList.add("badge");
   badge.textContent = priorita.toUpperCase();
