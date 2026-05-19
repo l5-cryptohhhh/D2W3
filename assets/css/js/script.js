@@ -20,7 +20,6 @@ function aggiornaContatore() {
   contatore.textContent = tasks.length;
 }
 
-;
 
 /* SCRIVI QUI LE TUE FUNZIONI:
    1. Modifica aggiungiTask per accettare priorita
