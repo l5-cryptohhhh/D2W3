@@ -20,9 +20,9 @@ function aggiornaContatore() {
   contatore.textContent = tasks.length;
 }
 
-aggiungiTask("Studiare JavaScript");
-aggiungiTask("Bere il caffè");
-aggiungiTask("Riposarsi");
+aggiungiTask("Studiare JavaScript", "alta");
+aggiungiTask("Bere il caffè", "bassa");
+aggiungiTask("Riposarsi", "media");
 
 /* SCRIVI QUI LE TUE FUNZIONI:
    1. Modifica aggiungiTask per accettare priorita
